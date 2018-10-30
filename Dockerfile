@@ -17,4 +17,4 @@ RUN curl "http://ftp.riken.jp/net/apache/spark/spark-$SPARK_VERSION/spark-$SPARK
 
 USER root
 WORKDIR $SPARK_HOME
-CMD ["su", "-c", "bin/spark-class org.apache.spark.deploy.master.Master", "spark"]
+#CMD ["su", "-c", "bin/spark-class org.apache.spark.deploy.master.Master", "spark"]
