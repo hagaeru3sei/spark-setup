@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+sudo apt update -y
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+
 # vbox
 echo 'deb https://download.virtualbox.org/virtualbox/debian xenial contrib' | sudo tee /etc/apt/sources.list.d/virtualbox.list
 curl -s https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo apt-key add -
@@ -21,4 +24,6 @@ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 sudo apt update
 sudo apt install -y kubelet kubeadm kubectl minikube docker.io
 
+# for k8s
+sudo swapoff -a
 
