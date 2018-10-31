@@ -36,8 +36,7 @@ python -m venv venv
 source venv/bin/activate
 
 # pip
-pip install numpy
-pip install pyspark
+pip install requirements.txt
 
 # hadoop
 if [ ! -f hadoop-2.7.7.tar.gz ]; then
