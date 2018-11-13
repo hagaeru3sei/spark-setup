@@ -9,7 +9,7 @@ sudo apt install -y apt-transport-https dirmngr
 sudo apt install -y openjdk-8-jdk
 
 # swapoff for k8s
-sudo cp setup/rc.loacl /etc/rc.local
+sudo cp setup/rc.local /etc/rc.local
 
 # pyenv
 pyenv_dir=~/.pyenv
