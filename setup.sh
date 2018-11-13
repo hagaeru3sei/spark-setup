@@ -8,6 +8,9 @@ sudo apt install -y zlib1g-dev libncursesw5-dev libgdbm-dev libc6-dev tk-dev lib
 sudo apt install -y apt-transport-https dirmngr
 sudo apt install -y openjdk-8-jdk
 
+# swapoff for k8s
+sudo cp setup/rc.loacl /etc/rc.local
+
 # pyenv
 pyenv_dir=~/.pyenv
 
