@@ -53,13 +53,13 @@ if [ ! -f hadoop-2.7.7.tar.gz ]; then
 fi
 
 # spark
-if [ ! -f ~/spark-2.3.2-bin-hadoop2.7.tgz ]; then
+if [ ! -f ~/spark-2.4.0-bin-hadoop2.7.tgz ]; then
   cd ~
-  wget "http://ftp.tsukuba.wide.ad.jp/software/apache/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgz"
-  tar zxvf spark-2.3.2-bin-hadoop2.7.tgz
+  wget "http://ftp.tsukuba.wide.ad.jp/software/apache/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz"
+  tar zxvf spark-2.4.0-bin-hadoop2.7.tgz
   echo '' >> ~/.profile
   echo '# spark' >> ~/.profile
-  echo 'export SPARK_HOME="~/spark-2.3.2-bin-hadoop2.7"' >> ~/.profile
+  echo 'export SPARK_HOME="~/spark-2.4.0-bin-hadoop2.7"' >> ~/.profile
   echo 'export PATH="$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin"' >> ~/.profile
   source ~/.profile
 fi
