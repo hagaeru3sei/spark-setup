@@ -28,8 +28,8 @@ fi
 
 source ~/.profile
 
-pyenv install 3.7.0
-pyenv global 3.7.0
+pyenv install 3.7.1
+pyenv global 3.7.1
 
 mkdir -p ~/sandbox/example
 cd ~/sandbox/example
